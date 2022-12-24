@@ -36,3 +36,9 @@ from
 	from events left join events_participants using (id_event)
 	group by id_event
 ) as table1;
+
+
+-- hw query
+select * from events
+join events_participants using (id_event)
+where (id_participant = 5) and (start_date > '2010-01-01') and (end_date < '2012-01-01');
